@@ -1,4 +1,7 @@
 ## exercicio 1
+#foi pedido que preenchessemos uma lista com 10 números digitados pelo usuário, depois para mostrassemos o maior e o menor número da lista,
+#a quantidade de números pares, a média dos números contidos na lista e todos os números menores que o valor da média calculada.
+
 listaUsuario = []
 for i in range(10):
     n = int(input('número: '))
@@ -22,6 +25,9 @@ for b in listaUsuario:
 
 
 ## exercicio 2
+#nesse exercício foi pedido que preenchessemos uma lista com 10 números digitados pelo usuário e a partir dessa lista
+#gerassemos uma lista apenas com os números pares e outra apenas com os números impares.
+
 listaUsuario2 = []
 for i in range(10):
     n = int(input('número: '))
@@ -40,17 +46,21 @@ print('lista impar :', listaImpar)
 
 
 ## exercicio 3
+#aqui foi solicitado que criassemos duas tuplas com 5 números digitados pelo usuário e em seguida que fizessemos a concatenação e exibissimos o resultado
+
 def criarTupla():
     return int(input('número tupla: '))
 
-tuplaUser1 = (criarTupla(), criarTupla(), criarTupla(), criarTupla(), criarTupla(),)
-tuplaUser2 = (criarTupla(), criarTupla(), criarTupla(), criarTupla(), criarTupla(),)
+tuplaUser1 = (criarTupla(), criarTupla(), criarTupla(), criarTupla(), criarTupla())
+tuplaUser2 = (criarTupla(), criarTupla(), criarTupla(), criarTupla(), criarTupla())
 print('tupla 1 :', tuplaUser1)
 print('tupla 2 :', tuplaUser2)
 print('concatenação de tuplas :', tuplaUser1 + tuplaUser2)
 
 
 ## exercicio 4
+#deveriamos usar uma função chamada 'intercala_numeros' para que ela pudesse receber duas listas de três itens e retornar uma lista de seis itens, com os números intercalados.
+
 def criarListas(t):
     for i in range(3):
         n = int(input('número lista: '))
