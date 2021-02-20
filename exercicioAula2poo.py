@@ -45,20 +45,37 @@ print('lista par :', listaPar)
 print('lista impar :', listaImpar)
 
 
-## exercicio 3
+## exercicio 3 - primeira versão
 #aqui foi solicitado que criassemos duas tuplas com 5 números digitados pelo usuário e em seguida que fizessemos a concatenação e exibissimos o resultado
 
 def criarTupla():
     return int(input('número tupla: '))
 
-tuplaUser1 = (criarTupla(), criarTupla(), criarTupla(), criarTupla(), criarTupla())
+tuplaUser1 = (criarTupla(), criarTupla(), criarTupla(), criarTupla(), criarTupla()) #essa foi a forma não muito funcional que pude criar como primeira versão
 tuplaUser2 = (criarTupla(), criarTupla(), criarTupla(), criarTupla(), criarTupla())
 print('tupla 1 :', tuplaUser1)
 print('tupla 2 :', tuplaUser2)
 print('concatenação de tuplas :', tuplaUser1 + tuplaUser2)
 
+##exercicio 3 - segunda versão
+def criarListas(t):
+    for i in range(3):
+        n = int(input('número lista: '))
+        t.append(n)
 
-## exercicio 4
+lista1 = []
+lista2 = []
+primeira = (criarListas(lista1))
+segunda = (criarListas(lista2))
+tupla1 = tuple(lista1)
+tupla2 = tuple(lista2)
+print(tupla1)
+print(tupla2)
+
+tuplaConcatenada = tupla1 + tupla2
+print(tuplaConcatenada)
+
+## exercicio 4 - primeira versão
 #deveriamos usar uma função chamada 'intercala_numeros' para que ela pudesse receber duas listas de três itens e retornar uma lista de seis itens, com os números intercalados.
 
 def criarListas(t):
@@ -77,3 +94,26 @@ segunda = (criarListas(listaUser2))
 print('lista 1 :', listaUser1)
 print('lista 2 :', listaUser2)
 print('numeros intecalados das duas listas: ', intercala_numeros())
+
+##exercicio 4 - segunda versão
+def criarListas(t):
+    for i in range(3):
+        n = int(input('número lista: '))
+        t.append(n)
+
+def intercalaNumeros2(lista1, lista2):
+    lista3 = []
+    for i in range(3):
+        lista3.append(lista1[i])
+        lista3.append(lista2[i])
+    return lista3
+
+listaUser1 = []
+listaUser2 = []
+primeira = (criarListas(listaUser1))
+segunda = (criarListas(listaUser2))
+listaIntercalada = intercalaNumeros2(listaUser1, listaUser2)
+
+print('lista 1 :', listaUser1)
+print('lista 2 :', listaUser2)
+print('numeros intecalados das duas listas: ', listaIntercalada)
