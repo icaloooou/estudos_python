@@ -1,19 +1,31 @@
-# Alguns estudos em python
----
+# Alguns estudos em python - atividades derivadas de avaliações acadêmicas
+
 ## Diretório: exer_iniciais
 ### Arquivo: exercicioAula2poo
 #### Data: 02/2021
-- Exercícios para entendimento de algumas funções que podemos usar com listas e tuplas
+- Exercícios para entendimento de algumas funções que podemos usar com listas e tuplas.
 
 ### Arquivo: testesAc
 #### Data: 03/2021
 - Algumas funções implementadas usando listas, tuplas e dicionários.
 - obs: Esse foi minha maneira de pensar e implementar cada função solicitada. Os códigos executáveis dentro do arquivo foram usados apenas para conferência dos resultados.
 ---
+## Diretório: pesquisa_brasileirao2018
+#### Data: 09/2021
+- Os arquivos foram encaminhado pelo professor da disciplina (desenvolvimento web), apenas deveriamos implementar as funções e por isso os comentários no código contem instruções e dicas de como efetuar cada função.
+- Utilizado em conjunto o arquivo ano2018.json
+---
+## Diretório: calculadora_com_testes
+#### Data: 05/2022
+- Projeto que implementa uma calculadora.
+- Arquivo com testes.
+---
+## Diretório: mvc_docker
+#### Data: 05/2022
+- Projeto que implementa um sistema de cadastro de produto e a sua listagem.
+- É utilizado docker-compose.
+---
 ## Diretório: testes_numeros_romanos
-### Arquivo: num_romanos
-#### Data: 08/2021
-- Função que converte números romanos em inteiros
-### Arquivo: test_num_romanos
-#### Data: 08/2021
-- Testes em pytest da função converte (arquivo acima)
+#### Data: 08/2022
+- Projeto que implementa uma função que converte um número romano para um inteiro.
+- Arquivo com testes.
